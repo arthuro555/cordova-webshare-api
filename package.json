@@ -1,0 +1,21 @@
+{
+  "name": "cordova-plugin-web-share",
+  "version": "0.0.1",
+  "description": "Cordova Web Share API support plugin",
+  "cordova": {
+    "id": "cordova-plugin-web-share",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "cordova",
+    "web",
+    "share",
+    "api",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Arthur Pacaud (arthuro555)",
+  "license": "MIT"
+}

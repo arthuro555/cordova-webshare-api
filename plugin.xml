@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-web-share" version="0.0.1">
+
+    <name>Web Share API</name>
+    <description>Cordova Web Share API support</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,share,web,api</keywords>
+
+    <js-module src="www/webshareapi.js" name="webshareapi">
+        <merges target="navigator" />
+    </js-module>
+
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="WebShareAPI">
+                <param name="android-package" value="com.arthuro555.cordova.webshare.WebShareAPI" />
+            </feature>
+        </config-file>
+        <source-file src="src/android/WebShareAPI.java" target-dir="src/com/arthuro555/cordova/webshare" />
+    </platform>
+</plugin>
